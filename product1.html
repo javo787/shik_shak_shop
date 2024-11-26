@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Платье 1</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../language-switch.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Информация о товаре</h1>
+    </header>
+    <main>
+        <div class="product-details">
+            <img src="../dress1.jpg" alt="Платье 1" class="product-main-image">
+            <div class="product-info">
+                <h2>Платье 1</h2>
+                <p>Цена: 200 сомони</p>
+                <p>Описание: Это элегантное платье идеально подходит для любого случая.</p>
+                
+            </div>
+            
+        </div>
+        <h3>Другие фото:</h3>
+        <div class="product-gallery">
+    <img src="../images/dress1-1.jpg" alt="Платье 1 фото 1" onclick="changeMainImage('../images/dress1-1.jpg')">
+    <img src="../images/dress1-2.jpg" alt="Платье 1 фото 2" onclick="changeMainImage('../images/dress1-2.jpg')">
+    <img src="../images/dress1-3.jpg" alt="Платье 1 фото 3" onclick="changeMainImage('../images/dress1-3.jpg')">
+        </div>
+        
+         <div class="product-buttons">
+            <button onclick="addToCart('Платье 1', 200)">Добавить в корзину</button>
+            <button onclick="orderOnWhatsApp('Платье 1', 200)">Заказать</button>
+         </div>
+        
+    </main>
+</body>
+</html>

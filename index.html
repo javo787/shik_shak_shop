@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shik Shak Shop - Главная</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="language-switch.js" defer></script>
+</head>
+<body>
+    <header>
+    <div class="logo-container">
+        <img src="images/logo.png" alt="Shik Shak Shop" class="logo">
+        
+        <h1 class="shop-title" data-lang-key="shop_name">
+         Shik Shak Shop
+        </h1>
+    </div>
+        
+    <nav>
+            <ul>
+                <li><a href="index.html" data-lang-key="nav_home">Главная</a></li>
+                <li><a href="catalog.html" data-lang-key="nav_catalog">Каталог</a></li>
+                <li><a href="about.html" data-lang-key="nav_about">О нас</a></li>
+                <li><a href="contact.html" data-lang-key="nav_contact">Контакты</a></li>
+                <li><a href="reviews.html" data-lang-key="nav_reviews">Отзывы</a></li>
+            </ul>
+    </nav>
+        
+        <div class="lang-switch">
+            <label for="language">Язык:</label>
+            <select id="language">
+                <option value="ru">Русский</option>
+                <option value="tg">Таджикский</option>
+            </select>
+        </div>
+    </header>
+    
+    <main>
+        <section class="carousel">
+    <div class="carousel-track">
+        <img src="images/dress1.jpg" alt="Акция 1">
+        <img src="images/blouse1.jpg" alt="Популярный товар 1">
+        <img src="images/skirt1.jpg" alt="Популярный товар 2">
+        <img src="images/jacket1.jpg" alt="Акция 2">
+    </div>
+        </section>
+        <section>
+            <h2 data-lang-key="welcome_title">Добро пожаловать в Shik Shak Shop!</h2>
+            <p data-lang-key="welcome_message">Ваш любимый интернет-магазин одежды.</p>
+        </section>
+        <section class="popular-products">
+    <h2 data-lang-key="main_popular">Популярные товары</h2>
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="dress1.jpg" alt="Товар 1">
+            <h3>Платье 1</h3>
+            <p>Цена: 200 сомони</p>
+            <a href="products/product1.html" class="product-button" data-lang-key="main_view_product">Посмотреть</a>
+        </div>
+        <div class="product-card">
+            <img src="skirt1.jpg" alt="Товар 2">
+            <h3>Юбка 1</h3>
+            <p>Цена: 150 сомони</p>
+            <a href="products/product2.html" class="product-button" data-lang-key="main_view_product">Посмотреть</a>
+        </div>
+        <div class="product-card">
+            <img src="blouse1.jpg" alt="Товар 3">
+            <h3>Блузка 1</h3>
+            <p>Цена: 100 сомони</p>
+            <a href="products/product3.html" class="product-button" data-lang-key="main_view_product">Посмотреть</a>
+        </div>
+    </div>
+        </section>
+    </main>
+    <footer class="footer-container">
+        <p data-lang-key="footer_text">© 2024 Shik Shak Shop. Все права защищены.</p>
+        <p>Мы также в социальных сетях:</p>
+    <div class="social-links">
+        <a href="https://www.instagram.com/shik_shak_shop.tj/" target="_blank" class="social-icon">
+            <img src="images/icons8-instagram-48.svg" alt="Instagram">
+        </a>
+        <a href="https://wa.me/+992929256633" target="_blank" class="social-icon">
+            <img src="images/icons8-whatsapp-48.svg" alt="WhatsApp">
+        </a>
+        <a href="https://t.me/shik_shak_shop_tj" target="_blank" class="social-icon">
+            <img src="images/icons8-telegram-48.svg" alt="Telegram">
+        </a>
+    </div>
+    </footer>
+</body>
+</html>

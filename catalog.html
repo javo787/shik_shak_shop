@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shik Shak Shop - Каталог</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="language-switch.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 data-lang-key="shop_name">Shik Shak Shop</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" data-lang-key="nav_home">Главная</a></li>
+                    <li><a href="catalog.html" data-lang-key="nav_catalog">Каталог</a></li>
+                    <li><a href="about.html" data-lang-key="nav_about">О нас</a></li>
+                    <li><a href="contact.html" data-lang-key="nav_contact">Контакты</a></li>
+                    <li><a href="reviews.html" data-lang-key="nav_reviews">Отзывы</a></li>
+                </ul>
+            </nav>
+            <div class="lang-switch">
+                <label for="language">Язык:</label>
+                <select id="language">
+                    <option value="ru">Русский</option>
+                    <option value="tg">Таджикский</option>
+                </select>
+            </div>
+        </div>
+    </header>
+    <main>
+        
+    <h2 data-lang-key="catalog_title">Каталог товаров</h2>
+    <div class="filters">
+        <select id="categoryFilter">
+            <option value="all" data-lang-key="filter_all">Все категории</option>
+            <option value="dresses" data-lang-key="filter_dresses">Платья</option>
+            <option value="skirts" data-lang-key="filter_skirts">Юбки</option>
+            <option value="blouses" data-lang-key="filter_blouses">Блузки</option>
+        </select>
+    </div>
+
+        <div class="sort-section">
+    <label for="sort" data-lang-key="sort_label">Сортировать по:</label>
+    <select id="sort">
+        <option value="popularity" data-lang-key="sort_popularity">Популярности</option>
+        <option value="price_asc" data-lang-key="sort_price_asc">Цене (по возрастанию)</option>
+        <option value="price_desc" data-lang-key="sort_price_desc">Цене (по убыванию)</option>
+    </select>
+        </div>
+        
+    <div class="product-grid">
+        <!-- Карточка товара -->
+        <div class="product-card" data-category="dresses" data-price="200">
+             <a href="products/product1.html">
+                <img src="images/dress1.jpg" alt="Платье 1">
+                <h3>Платье 1</h3>
+                <p>Цена: 200 сомони</p>
+             </a> 
+            <button onclick="addToCart('dress1')">Добавить в корзину</button>
+        </div>
+        <div class="product-card" data-category="skirts" data-price="150">
+             <a href="products/product2.html">
+                 <img src="images/skirt1.jpg" alt="Юбка 1">
+                <h3>Юбка 1</h3>
+                 <p>Цена: 150 сомони</p>
+             </a> 
+            <button onclick="addToCart('skirt1')">Добавить в корзину</button>
+        </div>
+        <div class="product-card" data-category="blouses" data-price="100">
+             <a href="products/product3.html">
+                <img src="images/blouse1.jpg" alt="Блузка 1">
+                <h3>Блузка 1</h3>
+                <p>Цена: 100 сомони</p>
+             </a>      
+            <button onclick="addToCart('blouse1')">Добавить в корзину</button>
+        </div>
+        <!-- Добавьте больше товаров по такому же шаблону -->
+    </div>
+        <section>
+            <h2 data-lang-key="catalog_title">Каталог товаров</h2>
+            <p data-lang-key="catalog_description">Выберите стиль, который подходит именно вам!</p>
+        </section>
+    </main>
+    <footer>
+        <p data-lang-key="footer_text">© 2024 Shik Shak Shop. Все права защищены.</p>
+    </footer>
+</body>
+</html>
